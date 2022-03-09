@@ -5,7 +5,6 @@ module.exports = {
    description: 'Set up Jartemis to recieve status updates',
    disabled: false,
    usage: 'setup',
-   sprewCrewOnly: false, // TURN OFF!!!
    options: [
       {
          name: 'announcement_channel',
