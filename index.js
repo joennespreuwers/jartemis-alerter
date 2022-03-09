@@ -10,20 +10,20 @@ client.vars = require('./utils/vars.json');
 client.templates = require('./utils/templates.json');
 client.command_replies = require('./utils/command_replies.json');
 
+console.log(`------------------------- ${colors.blue('LOADING')} DISCORD.JS EVENTS ------------------------`);
+const eventFiles = fs.readdirSync('./events/').filter(file => file.endsWith('.js'));
+for (const eventFile of eventFiles) {
+   const event = require(`./events/${eventFile}`);
+   if (event.once) {
+      client.once(event.name, async (...args) => await event.execute(...args));
+   } else {
+      client.on(event.name, async (...args) => await event.execute(...args));
+   }
+   console.log(`Discord.JS event '${event.name}' status: ✅`.padEnd(67, ' ') + `(${colors.green('loaded')})`);
+}
+
 client.login(client.config.token).then(async () => {
    await client.guilds.fetch();
-
-   console.log(`------------------------- ${colors.blue('LOADING')} DISCORD.JS EVENTS ------------------------`);
-   const eventFiles = fs.readdirSync('./events/').filter(file => file.endsWith('.js'));
-   for (const eventFile of eventFiles) {
-      const event = require(`./events/${eventFile}`);
-      if (event.once) {
-         client.once(event.name, async (...args) => await event.execute(...args));
-      } else {
-         client.on(event.name, async (...args) => await event.execute(...args));
-      }
-      console.log(`Discord.JS event '${event.name}' status: ✅`.padEnd(67, ' ') + `(${colors.green('loaded')})`);
-   }
 
    console.log(`----------------------------- ${colors.blue('LOADING')} COMMANDS -----------------------------`);
    const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
