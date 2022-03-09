@@ -1,0 +1,17 @@
+{
+   "command_executing_error": "Damn, looks like something went wrong while executing that command. Please contact <@211837665971142657> to recieve further support.",
+   "command_disabled": "**\\⚠️ COMMAND DISABLED \\⚠️**️\nThis command has been disabled temporarily. It will be back available soon.",
+   "wait_while_executing": "%VAR% Please wait while I'm executing the command...",
+   "global_update_success": "Your global update has been posted succesfully in `%VAR%` guilds!",
+   "global_update_fail": "Something went wrong while posting the update across all subscribed Discord servers. Contact <@363966858975510528> to recieve further support about this problem.",
+   "log_success": "<@%VAR%> succesfully posted an `%VAR%` update in `%VAR%` guilds.",
+   "log_fail": "<@%VAR%> tried to post an `%VAR%` update, but something went wrong.\n`n__Error:__\n```%VAR%```",
+   "setup": {
+      "success": "I've succesfully added you to the database and you'll recieve updates in <#%VAR%>. Welcome!",
+      "not_an_admin": "It seems like you don't have administrator privileges in this Discord server \\🤔. This is required for setting me up.",
+      "reconfigured_success": "I'll now post updates in <#%VAR%> and leave the previous channel alone!",
+      "reconfiguring_same_channel": "Nothing to change: the new channel is the same as the old one...",
+      "fail": "Something went wrong while creating the channel or adding you to the database, contact <@211837665971142657> to recieve further support.",
+      "this_channel_is_configured": "This channel is now configured to recieve all of the Jartemis status updates."
+   }
+}

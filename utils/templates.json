@@ -1,0 +1,32 @@
+{
+   "offline": {
+      "content": null,
+      "embeds": [
+         {
+            "title": "Jartemis Network Alert",
+            "description": "The Jartemis Network is currently offline. We're working hard to bring the Jartemis Network back up and running as soon as possible.\nFor more information, please check [jartemis.instatus.net](https://jartemis.instatus.net/).",
+            "color": 12280932
+         }
+      ]
+   },
+   "online": {
+      "content": null,
+      "embeds": [
+         {
+            "title": "Jartemis Network Alert",
+            "description": "The Jartemis Network is fully up and running again!",
+            "color": 6601572
+         }
+      ]
+   },
+   "announce": {
+      "content": null,
+      "embeds": [
+         {
+            "title": "Jartemis Network Alert",
+            "description": "%VAR%",
+            "color": 6595515
+         }
+      ]
+   }
+}

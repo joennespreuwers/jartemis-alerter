@@ -1,0 +1,19 @@
+{
+   "status": [
+      { "name": "dash.jartemis.net", "type": "WATCHING" },
+      { "name": "jartemis.instatus.net", "type": "WATCHING" }
+   ],
+   "control_server_id": "870356243993198683",
+   "control_role_id": "948192315669880854",
+   "command_logs_channel_id": "950097125432250388",
+   "loading_gif_emoji": "<a:Jartemis_Loading:950449893619667024>",
+   "new_channel_name": "💻jartemis-updates",
+   "success_color": "#64bb64",
+   "fail_color": "#bb6464",
+   "information_color": "#64a3bb",
+   "credits_footer": {
+      "text": "Jartemis  |  Coded with ❤️ by DataMind#9999",
+      "iconURL": "https://cdn.discordapp.com/icons/870356243993198683/45af348b2bbe2c3a17dd25a17991c448.png?size=4096"
+   },
+   "enable_logging_channel": false
+}
